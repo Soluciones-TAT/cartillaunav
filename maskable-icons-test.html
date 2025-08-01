@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maskable Icons Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .icon-test {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+        .icon-container {
+            position: relative;
+            display: inline-block;
+        }
+        .icon {
+            border-radius: 20%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .mask-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+        .circle-mask { border-radius: 50%; background: rgba(255,0,0,0.2); }
+        .rounded-mask { border-radius: 25%; background: rgba(0,255,0,0.2); }
+        .square-mask { border-radius: 0%; background: rgba(0,0,255,0.2); }
+        
+        h2 { color: #333; margin-top: 40px; }
+        p { color: #666; margin-bottom: 30px; }
+        
+        .size-192 { width: 192px; height: 192px; }
+        .size-512 { width: 128px; height: 128px; } /* Mostrar más pequeño para la página */
+        
+        .mask-demo {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎭 Maskable Icons Test - UNAV Cartilla</h1>
+    <p>Los iconos maskable se adaptan a diferentes formas según el sistema operativo.</p>
+    
+    <h2>📱 Iconos Generados</h2>
+    
+    <div class="icon-test">
+        <h3>192x192 (Maskable)</h3>
+        <div class="icon-container">
+            <img src="maskable-icon-192x192.svg" alt="Maskable 192" class="icon size-192">
+        </div>
+    </div>
+    
+    <div class="icon-test">
+        <h3>512x512 (Maskable)</h3>
+        <div class="icon-container">
+            <img src="maskable-icon-512x512.svg" alt="Maskable 512" class="icon size-512">
+        </div>
+    </div>
+    
+    <h2>🔍 Simulación de Máscaras</h2>
+    <p>Así se verían los iconos con diferentes formas aplicadas por el sistema:</p>
+    
+    <div class="mask-demo">
+        <div class="icon-container">
+            <img src="maskable-icon-192x192.svg" alt="Circle mask" class="icon" style="width: 100px; height: 100px; border-radius: 50%;">
+            <div class="mask-overlay circle-mask" style="width: 100px; height: 100px;"></div>
+        </div>
+        <span>Círculo (iOS)</span>
+    </div>
+    
+    <div class="mask-demo">
+        <div class="icon-container">
+            <img src="maskable-icon-192x192.svg" alt="Rounded mask" class="icon" style="width: 100px; height: 100px; border-radius: 25%;">
+            <div class="mask-overlay rounded-mask" style="width: 100px; height: 100px;"></div>
+        </div>
+        <span>Redondeado (Android)</span>
+    </div>
+    
+    <div class="mask-demo">
+        <div class="icon-container">
+            <img src="maskable-icon-192x192.svg" alt="Square mask" class="icon" style="width: 100px; height: 100px; border-radius: 15%;">
+            <div class="mask-overlay square-mask" style="width: 100px; height: 100px;"></div>
+        </div>
+        <span>Cuadrado (Algunos Android)</span>
+    </div>
+    
+    <h2>✅ Checklist de Maskable Icons</h2>
+    <ul>
+        <li>✅ Contenido dentro del 80% central</li>
+        <li>✅ Fondo que cubre toda el área</li>
+        <li>✅ Contraste adecuado</li>
+        <li>✅ Elementos importantes no cerca de los bordes</li>
+        <li>✅ Funciona en formas circulares, cuadradas y redondeadas</li>
+    </ul>
+    
+    <h2>🔗 Herramientas Útiles</h2>
+    <ul>
+        <li><a href="https://maskable.app/" target="_blank">Maskable.app</a> - Editor online</li>
+        <li><a href="https://web.dev/maskable-icon/" target="_blank">Web.dev Guide</a> - Documentación oficial</li>
+    </ul>
+    
+    <p><em>Generado para Cartilla de Emergencia UNAV - PWA Icons</em></p>
+</body>
+</html>

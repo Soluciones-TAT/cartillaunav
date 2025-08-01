@@ -1,0 +1,186 @@
+{
+  "name": "Cartilla de Emergencia UNAV",
+  "short_name": "UNAV Cartilla",
+  "description": "Directorio de emergencia marítima. Acceso rápido a contactos de personal, naves, agentes de aduanas y directorio de emergencia.",
+  "version": "1.0.0",
+  "start_url": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/init.aspx",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#23236c",
+  "background_color": "#23236c",
+  "categories": ["business", "navigation", "emergency", "productivity"],
+  "lang": "es",
+  "dir": "ltr",
+  "scope": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/",
+  "icons": [
+    {
+      "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-96x96.png",
+      "sizes": "96x96", 
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png", 
+      "purpose": "any"
+    },
+    {
+      "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-152x152.png", 
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-384x384.png",
+      "sizes": "384x384", 
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/maskable-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Personal",
+      "short_name": "Personal", 
+      "description": "Directorio de personal marítimo",
+      "url": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/init.aspx#personal",
+      "icons": [
+        {
+          "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Naves",
+      "short_name": "Naves",
+      "description": "Directorio de naves y embarcaciones", 
+      "url": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/init.aspx#naves",
+      "icons": [
+        {
+          "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Emergencia",
+      "short_name": "Emergencia",
+      "description": "Contactos de emergencia",
+      "url": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/init.aspx#contactos", 
+      "icons": [
+        {
+          "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "features": [
+    "Cross Platform",
+    "Offline Support", 
+    "Background Sync",
+    "Push Notifications"
+  ],
+  "platforms": {
+    "android": {
+      "package": "com.unav.cartilla",
+      "name": "UNAV Cartilla",
+      "version": "1.0.0",
+      "versionCode": 1,
+      "minSdkVersion": 21,
+      "targetSdkVersion": 33,
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
+      "signing": {
+        "store": "release.keystore",
+        "alias": "unav-cartilla"
+      },
+      "display": "standalone",
+      "orientation": "portrait",
+      "statusBarColor": "#23236c",
+      "navigationBarColor": "#23236c",
+      "themeColor": "#23236c",
+      "backgroundColor": "#23236c",
+      "splashScreens": {
+        "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-512x512.png",
+        "sizes": "512x512"
+      }
+    },
+    "ios": {
+      "bundleId": "com.unav.cartilla",
+      "name": "UNAV Cartilla", 
+      "version": "1.0.0",
+      "buildVersion": "1",
+      "minOSVersion": "13.0",
+      "display": "standalone",
+      "orientation": "portrait",
+      "statusBarStyle": "black-translucent",
+      "backgroundColor": "#23236c",
+      "splashScreens": [
+        {
+          "src": "https://ultranavgroup.sharepoint.com/sites/unavqa/appsea/AppMobile/icons/icon-512x512.png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    "windows": {
+      "packageId": "UNAVCartilla",
+      "publisherName": "UNAV",
+      "version": "1.0.0.0",
+      "minVersion": "10.0.19041.0",
+      "display": "standalone",
+      "backgroundColor": "#23236c",
+      "accentColor": "#23236c"
+    }
+  },
+  "pwabuilder": {
+    "serviceWorker": "pwabuilder-sw.js",
+    "offlineSupport": true,
+    "backgroundSync": true,
+    "pushNotifications": false,
+    "webShareTarget": false,
+    "shortcuts": true,
+    "screenshots": true
+  }
+}
